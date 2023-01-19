@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
@@ -5,16 +6,21 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
 
 	<persistence-unit name="unidadPersistencia" transaction-type="RESOURCE_LOCAL">
-		<class>com.pacoillan.bo.Entidad</class>
+		<class>com.pacoillan.model.Entidad</class>
 		<properties>
 
 			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.dialect"	value="org.hibernate.dialect.MySQLDialect" />
-			<property name="javax.persistence.jdbc.driver"	value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.user"	value="sql2589689" />
+			<property name="hibernate.dialect"	value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="javax.persistence.jdbc.driver"	value="com.mysql.cj.jdbc.Driver" />
+			
+			<!--<property name="javax.persistence.jdbc.user"	value="sql2589689" />
 			<property name="javax.persistence.jdbc.password" value="xP5*tI7!" />
-			<!-- <property name="javax.persistence.jdbc.url"		value="jdbc:mysql://sql2.freesqldatabase.com:3306?zeroDateTimeBehavior=convertToNull" /> -->
-			<property name="javax.persistence.jdbc.url"		value="sql2.freesqldatabase.com:3306?zeroDateTimeBehavior=convertToNull" />
+			<property name="javax.persistence.jdbc.url"		value="jdbc:mysql://sql2.freesqldatabase.com:3306?zeroDateTimeBehavior=convertToNull" /> 
+			<property name="javax.persistence.jdbc.url"		value="sql2.freesqldatabase.com:3306?zeroDateTimeBehavior=convertToNull" />-->
+			
+			<property name="javax.persistence.jdbc.url"		value="jdbc:mysql://localhost:3306/prueba2023?zeroDateTimeBehavior=convertToNull" />
+			<property name="javax.persistence.jdbc.username" value="root" />
+			<property name="javax.persistence.jdbc.password" value="" />			
 
 
 		</properties>

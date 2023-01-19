@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.pacoillan.bo.Entidad;
+import com.pacoillan.model.Entidad;
 
 public class Principal {
 
